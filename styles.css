@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: auto;
+    margin: auto;
+    background-color: #1F2937;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: left;
+    border:1px solid red;
+    flex: 1 1 auto;
+    margin-left: 175px;
+    margin-right: 100px;
+    height: auto;
+    width: auto;
+    max-width: 35px;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+    max-width: 35px;
+}
+
+.nav-link-container {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    flex: 1 1 auto;
+    border: 1px solid red;
+}

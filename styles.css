@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Roboto, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .navbar {
@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: left;
   flex: 1 1 auto;
-  margin-left: 175px;
+  margin-left: 15%;
   margin-right: 100px;
   height: auto;
   width: auto;
@@ -34,10 +34,97 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 60px;
-  margin-right: 250px;
+  margin-right: 25%;
 }
 
 .nav-link {
   font-size: 18px;
   color: #e5e7eb;
 }
+
+.hero-container {
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    gap: 50px;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction:column;
+    flex: 0 1 auto;
+    border: 1px solid red;
+    margin-left: 12%;
+    height: auto;
+    min-width: 500px;
+    max-width: 500px;
+}
+
+.hero-heading {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+    flex: none;
+    margin-bottom: -5px;
+}
+
+.hero-paragraph {
+    color: #f9faf8;
+    font-size: 18px;
+    flex: none;
+}
+
+.hero-button {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 700;
+    background: #3882F6;
+    color: #f9faf8;
+    border-radius: 7px;
+    border: none;
+    height: 35px;
+    width: 15%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.hero-video-container {
+    flex: 0 1 auto;
+    border: 1px solid red;
+    max-width: 100%;
+    height: auto;
+    margin-right: 22%;
+    
+}
+
+
+
+@media (max-width: 800px) {
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero-text-container, .hero-video-container {
+        width: 75%; 
+        max-width: none; 
+        min-width: 0; 
+        margin: 20px 0;
+        flex: 0 1 auto;
+    }
+
+    .hero-button {
+        max-width: 100%; 
+    }
+}
+
+
+
